@@ -7,49 +7,51 @@ const ProjectsSection = () => {
     {
       title: "SpeakTheGlobe",
       overview: "An interactive AI map where users ask any geography or culture question by voice and get real-time spoken answers.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      image: "/speaktheglobe.png",
       features: [
         "AI-powered map UI",
         "Real-time speech recognition & synthesis",
         "Dynamic map overlays"
       ],
       technologies: [
-        "React", "Google Maps API", "WebSockets", "Whisper API", "Text-to-Speech"
+        "React", "Google Maps API", "WebSockets", "OpenAI Realtime API"
       ],
       challenges: "Building a scalable WebSocket server for bi-directional audio streaming; handling network jitter and audio buffering.",
       learnings: [
         "Optimized real-time pipelines",
         "Improved reliability with fallback codecs",
         "Enhanced WebSocket implementation"
-      ]
+      ],
+      link: "https://speaktheglobe.com/"
     },
     {
       title: "Journal AI Diary (iOS)",
       overview: "A private, AI-driven digital diary that analyzes your entries and surfaces insights.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      image: "/journal.png",
       features: [
         "Secure local storage",
         "NLP-powered sentiment analysis",
         "Auto-tags for themes/people"
       ],
       technologies: [
-        "SwiftUI", "CoreML", "SpaCy", "Apple's CryptoKit"
+        "Flutter", "CoreML", "SpaCy", "Firebase"
       ],
-      challenges: "On-device ML model integration under memory constraints; encrypting sensitive journal data.",
+      challenges: "On-device Spacy integration under memory constraints",
       learnings: [
         "Streamlined model quantization",
         "User-friendly UI patterns for privacy",
         "Efficient on-device storage"
-      ]
+      ],
+      link: "https://apps.apple.com/in/app/journal-ai-assistant/id6740695466"
     },
     {
       title: "Tivra",
       overview: "An AI tutor offering Socratic questioning, standard study explanations, and practice quizzes.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      image: "/tivra.png",
       features: [
         "Three learning modes (Socratic, Study, Practice)",
-        "PDF upload & chat",
-        "Progress analytics"
+        "PDF upload",
+        "AI Chat"
       ],
       technologies: [
         "Next.js", "FastAPI", "OpenAI GPT", "Weaviate", "Supabase"
@@ -59,26 +61,28 @@ const ProjectsSection = () => {
         "Fine-tuned prompt templates",
         "Best practices for document retrieval",
         "Enhanced educational UX patterns"
-      ]
+      ],
+      link: "https://tivra.io/"
     },
     {
       title: "Latexpert",
       overview: "The world's first AI-powered LaTeX IDE with live preview, code completion, and citation management.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      image: "/latexpert.png",
       features: [
         "Syntax-aware editor",
         "AI suggestions for equation formatting",
         "One-click PDF compile"
       ],
       technologies: [
-        "Monaco editor", "Tectonic + BibTeX", "LangChain", "Rust"
+        "Codemirror editor", "TexLive", "LangChain", "LangGraph"
       ],
       challenges: "Parsing complex LaTeX ASTs in real time; synchronizing editor state with PDF preview.",
       learnings: [
         "Efficient tree-sitter grammars",
         "Incremental compilation strategies",
         "Advanced editor state management"
-      ]
+      ],
+      link: "https://latexpert.io/"
     }
   ];
 

@@ -12,6 +12,7 @@ export interface ProjectProps {
   technologies: string[];
   challenges: string;
   learnings: string[];
+  link: string;
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({
@@ -22,6 +23,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
   technologies,
   challenges,
   learnings,
+  link,
 }) => {
   return (
     <Card className="overflow-hidden bg-card hover:shadow-lg transition-all duration-300 h-full flex flex-col border-border/50">
@@ -75,7 +77,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
       </CardContent>
       
       <CardFooter className="border-t pt-4 bg-muted/30">
-        <Button variant="outline" size="sm" className="w-full border-primary/50 text-primary hover:bg-primary/5">View Project Details</Button>
+        <Button onClick={() => window.open(link)} variant="outline" size="sm" className="w-full border-primary/50 text-primary hover:bg-primary/5">View Live Project</Button>
       </CardFooter>
     </Card>
   );

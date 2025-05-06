@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center order-2 lg:order-1 animate-fade-in" style={{animationDelay: '0.3s'}}>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
             Hi, I'm <span className="text-primary">Aman Singh</span> – <br />
-            <span className="text-accent">AI Developer</span>
+            <span className="text-accent">Full Stack AI Developer</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="absolute inset-2 rounded-full bg-primary/20"></div>
             <div className="absolute inset-4 rounded-full overflow-hidden border-4 border-primary/30">
               <img 
-                src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=80" 
+                src="/aman.png" 
                 alt="Aman Singh - AI Developer" 
                 className="w-full h-full object-cover"
               />
