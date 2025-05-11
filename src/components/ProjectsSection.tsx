@@ -64,26 +64,26 @@ const ProjectsSection = () => {
       ],
       link: "https://tivra.io/"
     },
-    {
-      title: "Latexpert",
-      overview: "The world's first AI-powered LaTeX IDE with live preview, code completion, and citation management.",
-      image: "/latexpert.png",
-      features: [
-        "Syntax-aware editor",
-        "AI suggestions for equation formatting",
-        "One-click PDF compile"
-      ],
-      technologies: [
-        "Codemirror editor", "TexLive", "LangChain", "LangGraph"
-      ],
-      challenges: "Parsing complex LaTeX ASTs in real time; synchronizing editor state with PDF preview.",
-      learnings: [
-        "Efficient tree-sitter grammars",
-        "Incremental compilation strategies",
-        "Advanced editor state management"
-      ],
-      link: "https://latexpert.io/"
-    }
+    // {
+    //   title: "Latexpert",
+    //   overview: "The world's first AI-powered LaTeX IDE with live preview, code completion, and citation management.",
+    //   image: "/latexpert.png",
+    //   features: [
+    //     "Syntax-aware editor",
+    //     "AI suggestions for equation formatting",
+    //     "One-click PDF compile"
+    //   ],
+    //   technologies: [
+    //     "Codemirror editor", "TexLive", "LangChain", "LangGraph"
+    //   ],
+    //   challenges: "Parsing complex LaTeX ASTs in real time; synchronizing editor state with PDF preview.",
+    //   learnings: [
+    //     "Efficient tree-sitter grammars",
+    //     "Incremental compilation strategies",
+    //     "Advanced editor state management"
+    //   ],
+    //   link: "https://latexpert.io/"
+    // }
   ];
 
   return (
