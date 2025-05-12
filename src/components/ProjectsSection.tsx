@@ -5,6 +5,46 @@ import ProjectCard, { ProjectProps } from './ProjectCard';
 const ProjectsSection = () => {
   const projects: ProjectProps[] = [
     {
+      title: "Latexpert",
+      overview: "The world's first AI-powered LaTeX IDE with live preview, code completion, and citation management.",
+      image: "/latexpert.png",
+      features: [
+        "Syntax-aware editor",
+        "AI suggestions for equation formatting",
+        "One-click PDF compile"
+      ],
+      technologies: [
+        "Codemirror editor", "TexLive", "LangChain", "LangGraph"
+      ],
+      challenges: "Parsing complex LaTeX ASTs in real time; synchronizing editor state with PDF preview.",
+      learnings: [
+        "Efficient tree-sitter grammars",
+        "Incremental compilation strategies",
+        "Advanced editor state management"
+      ],
+      link: "https://latexpert.io/"
+    },
+    {
+      title: "Tivra",
+      overview: "An AI tutor offering Socratic questioning, standard study explanations, and practice quizzes.",
+      image: "/tivra.png",
+      features: [
+        "Three learning modes (Socratic, Study, Practice)",
+        "PDF upload",
+        "AI Chat"
+      ],
+      technologies: [
+        "Next.js", "FastAPI", "OpenAI GPT", "Weaviate", "Supabase"
+      ],
+      challenges: "Designing a robust RAG pipeline for Socratic questioning; balancing open-ended prompts with factual accuracy.",
+      learnings: [
+        "Fine-tuned prompt templates",
+        "Best practices for document retrieval",
+        "Enhanced educational UX patterns"
+      ],
+      link: "https://tivra.io/"
+    },
+    {
       title: "SpeakTheGlobe",
       overview: "An interactive AI map where users ask any geography or culture question by voice and get real-time spoken answers.",
       image: "/speaktheglobe.png",
@@ -43,47 +83,8 @@ const ProjectsSection = () => {
         "Efficient on-device storage"
       ],
       link: "https://apps.apple.com/in/app/journal-ai-assistant/id6740695466"
-    },
-    {
-      title: "Tivra",
-      overview: "An AI tutor offering Socratic questioning, standard study explanations, and practice quizzes.",
-      image: "/tivra.png",
-      features: [
-        "Three learning modes (Socratic, Study, Practice)",
-        "PDF upload",
-        "AI Chat"
-      ],
-      technologies: [
-        "Next.js", "FastAPI", "OpenAI GPT", "Weaviate", "Supabase"
-      ],
-      challenges: "Designing a robust RAG pipeline for Socratic questioning; balancing open-ended prompts with factual accuracy.",
-      learnings: [
-        "Fine-tuned prompt templates",
-        "Best practices for document retrieval",
-        "Enhanced educational UX patterns"
-      ],
-      link: "https://tivra.io/"
-    },
-    // {
-    //   title: "Latexpert",
-    //   overview: "The world's first AI-powered LaTeX IDE with live preview, code completion, and citation management.",
-    //   image: "/latexpert.png",
-    //   features: [
-    //     "Syntax-aware editor",
-    //     "AI suggestions for equation formatting",
-    //     "One-click PDF compile"
-    //   ],
-    //   technologies: [
-    //     "Codemirror editor", "TexLive", "LangChain", "LangGraph"
-    //   ],
-    //   challenges: "Parsing complex LaTeX ASTs in real time; synchronizing editor state with PDF preview.",
-    //   learnings: [
-    //     "Efficient tree-sitter grammars",
-    //     "Incremental compilation strategies",
-    //     "Advanced editor state management"
-    //   ],
-    //   link: "https://latexpert.io/"
-    // }
+    }
+    
   ];
 
   return (
